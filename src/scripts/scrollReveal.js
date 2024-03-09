@@ -30,11 +30,4 @@ ScrollReveal().reveal(".companyName", {
   easing: "ease",
   reset: false,
 });
-ScrollReveal().reveal(".contact_whatsapp", {
-  origin: "right",
-  distance: "100px",
-  duration: 1000,
-  easing: "ease",
-  reset: false,
-});
 

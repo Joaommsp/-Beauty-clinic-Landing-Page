@@ -217,6 +217,24 @@ h6 {
     align-items: center;
     font-size: 0.8rem;
   }
+
+  .contact_whatsapp {
+  width: 200px;
+
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 1rem;
+
+  background-color: #42d26e;
+  border-radius: 20px;
+  color: var(--cor-branca);
+  z-index: 1000;
+}
+
+.contact_whatsapp img {
+  margin-right: 0.5rem;
+  width: 25px;
+}
 }
 
 @media screen and (min-width: 601px) and (max-width: 1000px) {
@@ -246,6 +264,7 @@ h6 {
 
   .contactInfos {
     width: 70%;
+    height: 100%;
     position: absolute;
     left: 0;
     top: 50%;
