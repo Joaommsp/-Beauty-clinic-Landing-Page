@@ -28,3 +28,7 @@ All details of the service or product in one section of the page, reducing user 
 ![](./src/images/readme/1.PNG)
 #
 ![](./src/images/readme/2.PNG)
+
+## Images 
+![Unsplash](https://img.shields.io/badge/Unsplash-123456?style=for-the-badge&logo=unsplash&logoColor=white)
+![Freepik](https://img.shields.io/badge/Freepik-00843D?style=for-the-badge&logo=freepik&logoColor=white)
