@@ -48,11 +48,6 @@
   width: 164px;
   margin-left: 5rem;
   margin-right: 5rem;
-  transition: 0.5s ease-in-out;
-}
-
-.logo:hover {
-  transform: scale(1.2);
 }
 
 .navigation {
@@ -125,12 +120,12 @@
 }
 
 .bannerImage {
-  width: 394px;
+  width: 454px;
 
   position: absolute;
 
   bottom: 0;
-  right: 10rem;
+  right: 5rem;
   filter: drop-shadow(-36px 22px 8px #00000050);
   z-index: 1;
   -webkit-user-select: none; /* Safari */
@@ -197,6 +192,7 @@ h1 {
 
   color: #571f50;
   font-weight: 400;
+  z-index: 500;
 }
 
 h2 {
@@ -252,284 +248,6 @@ h2 {
   top: 3rem;
 }
 
-/* ====================== PAGE 2 - SERVICES ================== */
-
-.container__pageTwo {
-  width: 100%;
-  background-color: var(--cor-branca);
-  background-image: url(../assets/images/treatments-bg-image.png),url(../assets/images/treatment-bg-imageTwo.png) ;
-  background-size:50%, 30%;
-  background-repeat: no-repeat;
-  background-position: right top, left top; 
-  background-attachment: fixed;
-  height: 100%;
-  z-index: 10;
-
-  position: relative;
-
-  padding: 2rem 1rem;
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-
-  margin-bottom: 2rem;
-}
-
-.container__pageTwo:before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(255, 255, 255, 0.8); /* Ajuste a cor e a opacidade conforme necessário */
-  z-index: -1; /* Certifique-se de que o pseudo-elemento esteja atrás do conteúdo do elemento */
- }
-
-@media screen and (min-height: 780px) and (min-width: 1030px) {
-  .container__pageTwo {
-    height: 100vh;
-  }
-}
-
-h3 {
-  color: #571f50;
-  margin-bottom: 1rem;
-  font-family: "Figtree", sans-serif;
-}
-
-h4 {
-  color: var(--cor-preta);
-  font-family: "Figtree", sans-serif;
-  font-size: 2.5rem;
-  font-weight: 400;
-
-  margin-bottom: 2rem;
-}
-
-.treatmentImage {
-  width: 280px;
-  margin-bottom: 1rem;
-  -webkit-box-shadow: -12px 10px 0px -3px rgba(87, 31, 80, 1);
-  -moz-box-shadow: -12px 10px 0px -3px rgba(87, 31, 80, 1);
-  box-shadow: -12px 10px 0px -3px rgba(87, 31, 80, 1);
-  transition: 0.5s ease-in-out;
-}
-
-.treatmentImage:hover {
-  transform: scale(1.01);
-}
-
-.cardsContainer {
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-
-  gap: 56px;
-}
-
-.card {
-  width: 290px;
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.treatmentType {
-  width: 100%;
-  text-align: left;
-  margin-bottom: 1rem;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-}
-
-.treatmentName {
-  width: 100%;
-  text-align: left;
-  font-weight: 600;
-  font-size: 1.5rem;
-}
-
-.treatmentType,
-.treatmentName {
-  padding: 0 0.8rem;
-  font-family: "Figtree", sans-serif;
-  color: #571f50;
-}
-
-.cardDivisor {
-  width: 100%;
-  display: flex;
-  justify-content: flex-start;
-
-  padding: 0.8rem;
-}
-
-.cardDivisor .line {
-  width: 50%;
-  height: 2px;
-  background-color: #571f50;
-}
-
-.trementDetails {
-  width: 100%;
-}
-
-.trementDetails p {
-  padding: 0.8rem;
-  font-size: 0.8rem;
-  color: var(--cor-preta);
-  text-align: justify;
-}
-
-.seeMoreLink {
-  padding: 0.4rem 1rem;
-  color: var(--cor-branca);
-  background-color: #571f50;
-
-  transition: 0.5s ease-in-out;
-}
-
-.seeMoreLink:hover {
-  color: #571f50;
-  background-color: #ffffff01;
-}
-
-/* =================== PAGE 3 CONTACT ================== */
-
-.container__pageThree {
-  width: 100%;
-  height: 100vh;
-
-  display: flex;
-
-  position: relative;
-
-  background-color: #f4f4f4;
-}
-
-.contactBanner {
-  width: 40%;
-  height: 100%;
-  background-image: url(../assets/images/contact-banner.jpg);
-  background-position: center;
-  background-size: cover;
-}
-
-.contactBanner__cover {
-  width: 100%;
-  height: 100%;
-  background-color: #00000090;
-  padding: 2rem;
-}
-
-.logoFull {
-  width: 200px;
-}
-
-.contactDestac__image {
-  width: 500px;
-  margin-right: 2rem;
-}
-
-.contactInfos {
-  position: absolute;
-  left: 16rem;
-  top: 50%;
-  transform: translateY(-50%);
-
-  display: flex;
-}
-
-.infos {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-}
-
-h5 {
-  color: var(--cor-secundaria);
-  font-family: "Figtree", sans-serif;
-  font-size: 1.5rem;
-  margin-bottom: 2rem;
-  font-weight: 400;
-  letter-spacing: 1px;
-}
-
-h6 {
-  font-size: 2.5rem;
-  font-family: "Figtree", sans-serif;
-  color: #571f50;
-  font-weight: 400;
-}
-
-.infos p {
-  width: 80%;
-}
-
-.infos__title {
-  margin: 2rem 0;
-}
-
-.infosLinks {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-}
-
-.contact_whatsapp {
-  width: 200px;
-
-  display: flex;
-  align-items: center;
-  padding: 0.5rem 1rem;
-
-  background-color: #42d26e;
-  border-radius: 20px;
-  color: var(--cor-branca);
-}
-
-.contact_whatsapp img {
-  margin-right: 0.5rem;
-  width: 25px;
-}
-
-.contact_maps {
-  width: 200px;
-
-  display: flex;
-  align-items: center;
-  padding: 0.5rem 1rem;
-  margin-top: 1rem;
-
-  background-color: transparent;
-  border-radius: 20px;
-}
-
-.contact_maps img {
-  width: 128px;
-}
-
-.adress {
-  display: flex;
-  flex-direction: column;
-}
-
-.adress__title {
-  font-size: 1.22rem;
-  margin: 2rem 0 0.5rem 0;
-  color: #571f50;
-}
-
-.adress span {
-  margin: 0;
-}
-
 .openFormContainer {
   position: fixed;
   width: 80px;
@@ -549,10 +267,539 @@ h6 {
 
 .openFormContainer img {
   width: 50px;
-  transition: .3s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 
 .openFormContainer img:hover {
   transform: scale(1.05);
   cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+  .container__pageOne {
+    overflow: hidden;
+  }
+
+  .header {
+    height: 15vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--cor-branca);
+  }
+
+  .logo {
+    width: 100px;
+    margin-left: 1rem;
+    margin-right: 0rem;
+  }
+
+  .headerLink {
+    font-size: 0.8rem;
+  }
+
+  .navigation {
+    width: 50%;
+
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem 0rem;
+  }
+
+  .navigationHeader {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+
+    margin-bottom: 0.5rem;
+    padding: 0.5rem 0 0.5rem 0;
+
+    border-bottom: 1px solid #00000030;
+  }
+
+  .phoneNumber {
+    display: none;
+  }
+
+  .navigationHeader span:nth-child(1) {
+    display: none;
+  }
+
+  .headerBlock__adress {
+    display: none;
+  }
+
+  .navigationHeader img {
+    width: 20px;
+  }
+
+  .waveMain__page {
+    height: 150px;
+    position: absolute;
+    bottom: 0;
+  }
+
+  .randomForm_one {
+    width: 350px;
+    position: absolute;
+    right: -15rem;
+    top: 20rem;
+  }
+
+  .randomForm_two {
+    width: 350px;
+    position: absolute;
+    right: -10rem;
+    top: 15rem;
+  }
+
+  .bannerImage {
+    width: 254px;
+
+    position: absolute;
+
+    bottom: 0;
+    right: 0rem;
+    filter: drop-shadow(-36px 22px 8px #00000050);
+    z-index: 1;
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE 10+ */
+    user-select: none; /* padrão */
+  }
+
+  .bannerGradient {
+    width: 100%;
+    height: 90%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-left: 1rem;
+    padding-top: 1rem;
+
+    background-color: transparent;
+    z-index: 2;
+  }
+
+  h2,
+  h1 {
+    font-family: "Figtree", sans-serif;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+    width: 200px;
+    margin-bottom: 3rem;
+
+    color: #571f50;
+    font-weight: 400;
+  }
+
+  h2 {
+    margin-bottom: 2rem;
+    width: 400px;
+
+    font-size: 0.8rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #571f50;
+  }
+
+  .viewServices__Button {
+    width: fit-content;
+    padding: 0.8rem 1rem;
+
+    background-color: #571f50;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: "Figtree", sans-serif;
+    letter-spacing: 1px;
+    border: 2px solid #571f50;
+
+    font-size: 0.8rem;
+    color: var(--cor-branca);
+
+    transition: 0.3s ease-in-out;
+
+    z-index: 5;
+  }
+
+  .viewServices__Button:hover {
+    border: 2px solid #571f50;
+    background-color: transparent;
+    color: #571f50;
+  }
+
+  .openFormContainer {
+    position: fixed;
+    width: 50px;
+    height: 50px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    clip-path: circle(50% at 50% 50%);
+    bottom: 2rem;
+    right: 2rem;
+    z-index: 1000;
+
+    background-color: #571f50;
+  }
+
+  .openFormContainer img {
+    width: 26px;
+    transition: 0.3s ease-in-out;
+  }
+
+  .openFormContainer img:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+  }
+}
+
+@media screen and (min-width: 601px) and (max-width: 1000px) {
+  .container__pageOne {
+    overflow: hidden;
+  }
+
+  .header {
+    height: 15vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--cor-branca);
+  }
+
+  .logo {
+    width: 126px;
+    margin-left: 1rem;
+    margin-right: 0rem;
+  }
+
+  .headerLink {
+    font-size: 1rem;
+  }
+
+  .navigation {
+    width: 70%;
+
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem 0rem;
+  }
+
+  .navigationHeader {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+
+    margin-bottom: 0.5rem;
+    padding: 0.5rem 0 0.5rem 0;
+
+    border-bottom: 1px solid #00000030;
+  }
+
+  .phoneNumber {
+    display: block;
+  }
+
+  .navigationHeader span:nth-child(1) {
+    display: none;
+  }
+
+  .headerBlock__adress {
+    display: none;
+  }
+
+  .navigationHeader img {
+    width: 20px;
+  }
+
+  .waveMain__page {
+    height: 150px;
+    position: absolute;
+    bottom: 0;
+  }
+
+  .randomForm_one {
+    width: 380px;
+    position: absolute;
+    right: -15rem;
+    top: 15rem;
+  }
+
+  .randomForm_two {
+    width: 370px;
+    position: absolute;
+    right: -10rem;
+    top: 10rem;
+  }
+
+  .bannerImage {
+    width: 354px;
+
+    position: absolute;
+
+    bottom: 0;
+    right: 0rem;
+    filter: drop-shadow(-36px 22px 8px #00000050);
+    z-index: 1;
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE 10+ */
+    user-select: none; /* padrão */
+  }
+
+  .bannerGradient {
+    width: 100%;
+    height: 90%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 2rem;
+
+    background-color: transparent;
+    z-index: 2;
+  }
+
+  h2,
+  h1 {
+    font-family: "Figtree", sans-serif;
+  }
+
+  h1 {
+    font-size: 3rem;
+    width: 200px;
+    margin-bottom: 2rem;
+
+    color: #571f50;
+    font-weight: 400;
+  }
+
+  h2 {
+    margin-bottom: 2rem;
+    width: 400px;
+
+    font-size: 0.8rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #571f50;
+  }
+
+  .viewServices__Button {
+    width: fit-content;
+    padding: 0.8rem 1rem;
+
+    background-color: #571f50;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: "Figtree", sans-serif;
+    letter-spacing: 1px;
+    border: 2px solid #571f50;
+    color: var(--cor-branca);
+
+    transition: 0.3s ease-in-out;
+
+    z-index: 5;
+  }
+
+  .viewServices__Button:hover {
+    border: 2px solid #571f50;
+    background-color: transparent;
+    color: #571f50;
+  }
+
+  .openFormContainer {
+    position: fixed;
+    width: 50px;
+    height: 50px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    clip-path: circle(50% at 50% 50%);
+    bottom: 2rem;
+    right: 2rem;
+    z-index: 1000;
+
+    background-color: #571f50;
+  }
+
+  .openFormContainer img {
+    width: 26px;
+    transition: 0.3s ease-in-out;
+  }
+
+  .openFormContainer img:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+  }
+}
+
+@media screen and (min-width: 1001px) and (max-width: 1300px) {
+  .container__pageOne {
+    overflow: hidden;
+  }
+
+  .header {
+    height: 15vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--cor-branca);
+  }
+
+  .logo {
+    width: 156px;
+    margin-left: 5rem;
+    margin-right: 0rem;
+  }
+
+  .headerLink {
+    font-size: 1rem;
+  }
+
+  .navigation {
+    width: 70%;
+
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem 2rem;
+  }
+
+  .navigationHeader {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 26px;
+
+    margin-bottom: 0.5rem;
+    padding: 0.5rem 0 0.5rem 0;
+
+    border-bottom: 1px solid #00000030;
+  }
+
+  .phoneNumber {
+    display: block;
+  }
+
+  .navigationHeader span:nth-child(1) {
+    display: block;
+  }
+
+  .headerBlock__adress {
+    display: block;
+    width: 10%;
+  }
+
+  .navigationHeader img {
+    width: 24px;
+  }
+
+  .waveMain__page {
+    height: 160px;
+    position: absolute;
+    bottom: 0;
+  }
+
+  .randomForm_one {
+    width: 380px;
+    position: absolute;
+    right: 0rem;
+    top: 5rem;
+  }
+
+  .randomForm_two {
+    width: 370px;
+    position: absolute;
+    right: 0rem;
+    top: 3rem;
+  }
+
+  .bannerImage {
+    width: 404px;
+
+    position: absolute;
+
+    bottom: 0;
+    right: 0rem;
+    filter: drop-shadow(-36px 22px 8px #00000050);
+    z-index: 1;
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE 10+ */
+    user-select: none; /* padrão */
+  }
+
+  .bannerGradient {
+    width: 100%;
+    height: 90%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 5rem;
+
+    background-color: transparent;
+    z-index: 2;
+  }
+
+  h2,
+  h1 {
+    font-family: "Figtree", sans-serif;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+    width: 500px;
+    margin-bottom: 2rem;
+
+    color: #571f50;
+    font-weight: 400;
+  }
+
+  h2 {
+    margin-bottom: 2rem;
+    width: 400px;
+
+    font-size: 0.8rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #571f50;
+  }
+
+  .viewServices__Button {
+    width: fit-content;
+    padding: 0.8rem 1rem;
+
+    background-color: #571f50;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: "Figtree", sans-serif;
+    letter-spacing: 1px;
+    border: 2px solid #571f50;
+    color: var(--cor-branca);
+
+    transition: 0.3s ease-in-out;
+
+    z-index: 5;
+  }
+
+  .viewServices__Button:hover {
+    border: 2px solid #571f50;
+    background-color: transparent;
+    color: #571f50;
+  }
 }

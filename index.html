@@ -33,6 +33,11 @@
 
     <link rel="stylesheet" href="./src/styles/global.css" />
     <link rel="stylesheet" href="./src/styles/main.css" />
+    <link rel="stylesheet" href="./src/styles/services.css" />
+    <link rel="stylesheet" href="./src/styles/contact.css" />
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="./src/scripts/scrollReveal.js" defer></script>
 
     <title>Esthetic Clinic</title>
   </head>
@@ -40,10 +45,10 @@
     <div class="container">
       <div class="container__pageOne">
         <header class="header">
-          <img src="./src/assets/images/ms-logo.png" alt="" class="logo" />
+          <img src="./src/assets/images/logo.png" alt="" class="logo" />
           <nav class="navigation">
             <div class="navigationHeader">
-              <span>Redes Sociais</span>
+              <span>Social Medias</span>
               <a href="">
                 <img src="./src/assets/images/svg/whatsapp-icon.svg" alt=""
               /></a>
@@ -56,8 +61,8 @@
               <span class="phoneNumber">00 00000 - 0000</span>
             </div>
             <ul class="navigationLinks">
-              <li><a href="#" class="headerLink">Serviços</a></li>
-              <li><a href="#" class="headerLink">Contato</a></li>
+              <li><a href="#services" class="headerLink">Services</a></li>
+              <li><a href="#contact" class="headerLink">Contact</a></li>
             </ul>
           </nav>
           <div class="headerBlock__adress"></div>
@@ -65,7 +70,7 @@
         <div class="banner">
           <div class="bannerImage__container">
             <img
-              src="./src/assets/images/banner-image.png"
+              src="./src/assets/images/banner.png"
               class="bannerImage"
               alt=""
             />
@@ -80,9 +85,9 @@
               alt=""
             /> -->
             <div class="bannerGradient">
-              <h2>Estética Avançada</h2>
-              <h1>Manu Siqueira</h1>
-              <a href="#services" class="viewServices__Button">Ver tratamentos</a>
+              <h2>Advanced Skin Treatments</h2>
+              <h1>Elegance Aesthetics</h1>
+              <a href="#services" class="viewServices__Button">View Services</a>
             </div>
           </div>
         </div>
@@ -97,15 +102,15 @@
           class="randomForm_one"
         />
         <img
-        src="./src/assets/images/svg/randomForms/form2.svg"
-        alt=""
-        class="randomForm_two"
-      />
+          src="./src/assets/images/svg/randomForms/form2.svg"
+          alt=""
+          class="randomForm_two"
+        />
       </div>
 
       <div class="container__pageTwo" id="services">
-        <h3>NATURAL E SAUDÁVEL</h3>
-        <h4>Tratamentos & Serviços</h4>
+        <h3>NATURAL AND HEALTHY</h3>
+        <h4>Treatments & Services</h4>
         <div class="cardsContainer">
           <div class="card">
             <img
@@ -113,19 +118,19 @@
               alt=""
               class="treatmentImage"
             />
-            <span class="treatmentType">Estética facial</span>
-            <span class="treatmentName">Cosmético/Cirúrgico</span>
+            <span class="treatmentType">Facial aesthetics</span>
+            <span class="treatmentName">Cosmetic/Surgical</span>
             <div class="cardDivisor">
               <div class="line"></div>
             </div>
             <div class="trementDetails">
               <p>
-                O tratamento de renovação facial avançada oferece uma abordagem
-                profissional e focada para melhorar a aparência da pele e
-                promover uma sensação de rejuvenescimento.
+                The advanced facial renewal treatment offers a professional and
+                focused to improve the appearance of the skin and promote a
+                feeling of rejuvenation...
               </p>
             </div>
-            <a href="#" class="seeMoreLink">Saber mais</a>
+            <a href="#" class="seeMoreLink">See more</a>
           </div>
           <div class="card">
             <img
@@ -133,19 +138,19 @@
               alt=""
               class="treatmentImage"
             />
-            <span class="treatmentType">Estética corporal</span>
-            <span class="treatmentName">Cosmético/Cirúrgico</span>
+            <span class="treatmentType">Body esthetics</span>
+            <span class="treatmentName">Cosmetic/Surgical</span>
             <div class="cardDivisor">
               <div class="line"></div>
             </div>
             <div class="trementDetails">
               <p>
-                O tratamento de renovação facial avançada oferece uma abordagem
-                profissional e focada para melhorar a aparência da pele e
-                promover uma sensação de rejuvenescimento.
+                Furthermore, modeling massage can improve metabolism, eliminate
+                toxins, improve peripheral vascular circulation and increase
+                muscle tone...
               </p>
             </div>
-            <a href="#" class="seeMoreLink">Saber mais</a>
+            <a href="#" class="seeMoreLink">See more</a>
           </div>
           <div class="card">
             <img
@@ -153,28 +158,67 @@
               alt=""
               class="treatmentImage"
             />
-            <span class="treatmentType">Estética capilar</span>
-            <span class="treatmentName">Cosmético</span>
+            <span class="treatmentType">Hair aesthetics</span>
+            <span class="treatmentName">Cosmetic</span>
             <div class="cardDivisor">
               <div class="line"></div>
             </div>
             <div class="trementDetails">
               <p>
-                O tratamento de renovação facial avançada oferece uma abordagem
-                profissional e focada para melhorar a aparência da pele e
-                promover uma sensação de rejuvenescimento.
+                These treatments are classified within aesthetic medicine and
+                are designed to improve the appearance of hair and scalp...
               </p>
             </div>
-            <a href="#" class="seeMoreLink">Saber mais</a>
+            <a href="#" class="seeMoreLink">See more</a>
+          </div>
+          <div class="card">
+            <img
+              src="./src/assets/images/treatments/massage.jpg"
+              alt=""
+              class="treatmentImage"
+            />
+            <span class="treatmentType">Relaxing Massage</span>
+            <span class="treatmentName">Cosmetic</span>
+            <div class="cardDivisor">
+              <div class="line"></div>
+            </div>
+            <div class="trementDetails">
+              <p>
+                A therapeutic technique that aims to promote relaxation and
+                stress relief by applying gentle to moderate pressure to the
+                muscles and tissues of the body.
+              </p>
+            </div>
+            <a href="#" class="seeMoreLink">See more</a>
+          </div>
+          <div class="card">
+            <img
+              src="./src/assets/images/treatments/lips.jpg"
+              alt=""
+              class="treatmentImage"
+            />
+            <span class="treatmentType">Lip Renewal</span>
+            <span class="treatmentName">Cosmetic</span>
+            <div class="cardDivisor">
+              <div class="line"></div>
+            </div>
+            <div class="trementDetails">
+              <p>
+                Lip renewal is a process that aims to promote the health and
+                beauty of the lips through specific care, including exfoliation,
+                hydration and protection.
+              </p>
+            </div>
+            <a href="#" class="seeMoreLink">See more</a>
           </div>
         </div>
       </div>
 
-      <div class="container__pageThree">
+      <div class="container__pageThree" id="contact">
         <div class="contactBanner">
           <div class="contactBanner__cover">
             <img
-              src="./src/assets/images/logo-full-light.png"
+              src="./src/assets/images/logo-light.png"
               alt=""
               class="logoFull"
             />
@@ -182,21 +226,21 @@
         </div>
         <div class="contactInfos">
           <img
-            src="./src/assets/images/contactDestak.PNG"
+            src="./src/assets/images/contact-emphasis.jpg"
             alt=""
             class="contactDestac__image"
           />
           <div class="infos">
-            <h5>Quem somos</h5>
-            <h6>Manu Siqueira</h6>
+            <h5>Who we are</h5>
+            <h6 class="companyName">Elegance Aesthetics</h6>
             <p>
-              Manu Siqueira Estética Avançada é uma empresa voltada para
-              tratamentos estéticos e de saúde
+              Elegance Aesthetics is a company focused on aesthetic and health
+              treatments
             </p>
-            <span class="infos__title">Agende sua avaliação:</span>
+            <span class="infos__title">book your review:</span>
             <div class="infosLinks">
               <a
-                href="https://api.whatsapp.com/send/?phone=557588154872&text&type=phone_number&app_absent=0"
+                href="https://api.whatsapp.com/send/?phone=5575988275212&text&type=phone_number&app_absent=0"
                 class="contact_whatsapp"
                 ><img
                   src="./src/assets/images/svg/whatsapp-icon-light.svg"
@@ -204,26 +248,23 @@
                 />Fale conosco</a
               >
             </div>
-            <span class="adress__title">Endereço</span>
+            <span class="adress__title">Adress</span>
             <div class="adress">
-              <span>Rua Marechal Floriano Peixoto</span>
-              <span>N° 549</span>
-              <span>Cliomel Empresarial Sala 403 4º Andar</span>
-              <span>Paulo Afonso, BA, Brazil</span>
+              <span>Elm Street</span>
+              <span>N° 1234 </span>
+              <span>Springfield, IL 62701</span>
+              <span>NY - United States</span>
               <a
-                href="https://www.google.com/maps/search/?api=1&query=[Rua Marechal Floriano Peixoto 549 Paulo Afonso]"
+                href="https://www.google.com/maps/search/?api=1&query=[New york]"
                 class="contact_maps"
-                ><img
-                  src="./src/assets/images/Google_Maps_Logo.svg.png"
-                  alt=""
-                /></a
-              >
+                ><img src="./src/assets/images/Google_Maps_Logo.svg.png" alt=""
+              /></a>
             </div>
           </div>
         </div>
       </div>
       <div class="openFormContainer">
-        <img src="./src/assets/images/svg/message-icon.svg" alt="">
+        <img src="./src/assets/images/svg/message-icon.svg" alt="" />
       </div>
     </div>
   </body>

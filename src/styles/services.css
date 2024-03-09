@@ -1,0 +1,227 @@
+/* ====================== PAGE 2 - SERVICES ================== */
+
+.container__pageTwo {
+  width: 100%;
+  background-color: var(--cor-branca);
+  background-image: url(../assets/images/treatments-bg-image.png),
+    url(../assets/images/treatment-bg-imageTwo.png);
+  background-size: 50%, 30%;
+  background-repeat: no-repeat;
+  background-position: right top, left top;
+  background-attachment: fixed;
+  height: 100%;
+  z-index: 10;
+
+  position: relative;
+
+  padding: 2rem 1rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  margin-bottom: 0rem;
+}
+
+.container__pageTwo:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.8
+  ); /* Ajuste a cor e a opacidade conforme necessário */
+  z-index: -1; /* Certifique-se de que o pseudo-elemento esteja atrás do conteúdo do elemento */
+}
+
+@media screen and (min-height: 780px) and (min-width: 1030px) {
+  .container__pageTwo {
+    height: 100vh;
+  }
+}
+
+h3 {
+  color: #571f50;
+  margin-bottom: 1rem;
+  font-family: "Figtree", sans-serif;
+}
+
+h4 {
+  color: var(--cor-preta);
+  font-family: "Figtree", sans-serif;
+  font-size: 2.5rem;
+  font-weight: 400;
+
+  margin-bottom: 2rem;
+}
+
+.treatmentImage {
+  width: 280px;
+  margin-bottom: 1rem;
+  -webkit-box-shadow: -12px 10px 0px -3px rgba(87, 31, 80, 1);
+  -moz-box-shadow: -12px 10px 0px -3px rgba(87, 31, 80, 1);
+  box-shadow: -12px 10px 0px -3px rgba(87, 31, 80, 1);
+  transition: 0.5s ease-in-out;
+}
+
+.treatmentImage:hover {
+  transform: scale(1.01);
+}
+
+.cardsContainer {
+  width: 80%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+
+  padding-left: 1rem;
+  padding-bottom: 2rem;
+
+  overflow-x: scroll;
+
+  gap: 56px;
+}
+
+/* For Firefox */
+/* .cardsContainer {
+  scrollbar-width: thin;
+  scrollbar-color: #571f50 #f1f1f1;
+ }
+  */
+
+/* For WebKit browsers (Chrome, Safari) */
+.cardsContainer::-webkit-scrollbar {
+  width: 10px;
+}
+
+.cardsContainer::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.cardsContainer::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+.cardsContainer::-webkit-scrollbar-thumb:hover {
+  background: #571f50;
+}
+
+.card {
+  width: 290px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.treatmentType {
+  width: 100%;
+  text-align: left;
+  margin-bottom: 1rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.treatmentName {
+  width: 100%;
+  text-align: left;
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+
+.treatmentType,
+.treatmentName {
+  padding: 0 0.8rem;
+  font-family: "Figtree", sans-serif;
+  color: #571f50;
+}
+
+.cardDivisor {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+
+  padding: 0.8rem;
+}
+
+.cardDivisor .line {
+  width: 50%;
+  height: 2px;
+  background-color: #571f50;
+}
+
+.trementDetails {
+  width: 100%;
+}
+
+.trementDetails p {
+  padding: 0.8rem;
+  font-size: 0.8rem;
+  color: var(--cor-preta);
+  text-align: justify;
+}
+
+.seeMoreLink {
+  padding: 0.4rem 1rem;
+  color: var(--cor-branca);
+  background-color: #571f50;
+
+  transition: 0.5s ease-in-out;
+}
+
+.seeMoreLink:hover {
+  color: #571f50;
+  background-color: #ffffff01;
+}
+
+@media screen and (max-width: 600px) {
+  h4 {
+    color: var(--cor-preta);
+    font-family: "Figtree", sans-serif;
+    font-size: 1.6rem;
+  }
+
+  .cardsContainer {
+    width: 98%;
+    display: flex;
+    padding-left: 0rem;
+    padding-bottom: 2rem;
+
+    overflow-x: scroll;
+
+    gap: 56px;
+  }
+
+  .treatmentImage {
+    width: 250px;
+    margin-bottom: 1rem;
+    -webkit-box-shadow: -12px 10px 0px -3px rgba(87, 31, 80, 1);
+    -moz-box-shadow: -12px 10px 0px -3px rgba(87, 31, 80, 1);
+    box-shadow: -12px 10px 0px -3px rgba(87, 31, 80, 1);
+    transition: 0.5s ease-in-out;
+  }
+
+  .treatmentType {
+    font-size: 0.8rem;
+  }
+
+  .treatmentName {
+    font-size: 1rem;
+  }
+
+  .trementDetails p {
+    padding: 0.8rem;
+    font-size: 0.8rem;
+    height: 120px;
+    color: var(--cor-preta);
+    text-align: justify;
+    text-overflow: clip;
+  }
+}
