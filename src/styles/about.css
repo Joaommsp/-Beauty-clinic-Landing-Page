@@ -1,0 +1,116 @@
+.container__pageTwo {
+  width: 100%;
+  height: 85vh;
+  background-color: #55204f;
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.aboutUs__imageContainer {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.teamImage {
+  width: 450px;
+  z-index: 5;
+}
+
+.aboutUs__text {
+  width: 60%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  padding: 4rem 2rem;
+}
+
+.aboutTitle {
+  color: #e4d5bd;
+  font-size: 2.5rem;
+  z-index: 10;
+}
+
+.aboutText {
+  text-align: justify;
+  color: #ffffff;
+  margin-bottom: 15rem;
+  z-index: 10;
+}
+
+.waveMain__page {
+  height: 100%;
+  position: absolute;
+  bottom: 0;
+}
+
+.pageTwo_logoLight {
+  width: 256px;
+  position: absolute;
+  right: 2rem;
+  bottom: 2rem;
+}
+
+/* 
+================================== sobre o espaço */
+
+.container__pageTwo_one {
+  width: 100%;
+  height: 90vh;
+  background-color: #55204f;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.aboutUs__text_one {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.aboutTitle_one {
+  color: #e4d5bd;
+  font-size: 2.5rem;
+  z-index: 10;
+  text-align: center;
+}
+
+.aboutText_one {
+  text-align: justify;
+  color: #ffffff;
+  margin-bottom: 0;
+  z-index: 10;
+  text-align: center;
+}
+
+.aboutUs__imageContainer_one {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.images {
+  display: flex;
+  gap: 24px;
+}
+
+.image {
+  width: 380px;
+}

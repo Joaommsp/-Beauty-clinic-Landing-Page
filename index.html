@@ -33,6 +33,7 @@
 
     <link rel="stylesheet" href="./src/styles/global.css" />
     <link rel="stylesheet" href="./src/styles/main.css" />
+    <link rel="stylesheet" href="./src/styles/about.css" />
     <link rel="stylesheet" href="./src/styles/services.css" />
     <link rel="stylesheet" href="./src/styles/contact.css" />
 
@@ -42,57 +43,74 @@
     <title>Esthetic Clinic</title>
   </head>
   <body>
-    <div class="container">
+    <div class="container_fluid">
       <div class="container__pageOne">
         <header class="header">
           <nav class="navigation">
             <div class="navigationHeader">
-              <span>Social Medias</span>
-              <a href="">
-                <img src="./src/assets/images/svg/whatsapp-icon.svg" alt=""
-              /></a>
-              <a href="">
-                <img src="./src/assets/images/svg/instagram-icon.svg" alt=""
-              /></a>
-              <a href="">
-                <img src="./src/assets/images/svg/facebook-icon.svg" alt=""
-              /></a>
+              <div class="headerSocial">
+                <span>Social Medias</span>
+                <a href="">
+                  <img src="./src/assets/images/svg/whatsapp-icon.svg" alt=""
+                /></a>
+                <a href="">
+                  <img src="./src/assets/images/svg/instagram-icon.svg" alt=""
+                /></a>
+                <a href="">
+                  <img src="./src/assets/images/svg/facebook-icon.svg" alt=""
+                /></a>
+              </div>
               <img src="./src/assets/images/logo.png" alt="" class="logo" />
-              <span class="phoneNumber">00 00000 - 0000</span>
-              <a href="#services" class="headerLink">Services</a>
-              <a href="#contact" class="headerLink">Contact</a>
+              <div class="headerAbout">
+                <span class="phoneNumber">00 00000 - 0000</span>
+                <a href="#services" class="headerLink">Serviços</a>
+                <a href="#contact" class="headerLink">Contato</a>
+              </div>
             </div>
           </nav>
           <div class="headerBlock__adress"></div>
         </header>
         <div class="banner">
-            <div class="bannerGradient">
-              <div class="bannerImage__container">
-                <img
-                src="./src/assets/images/banner.png"
-                class="bannerImage"
+          <div class="bannerGradient">
+            <div class="bannerText">
+              <img
+                src="./src/assets/images/logo-full.png"
                 alt=""
+                class="logo-full"
               />
+              <div class="bannerText__links">
+                <a href="#services" class="viewServices__Button"
+                  >Nossos serviços</a
+                >
+                <a href="#services" class="viewServices__Button">Sobre nós</a>
               </div>
-              <div class="bannerText">
-                <h2>Advanced Skin Treatments</h2>
-                <h1>Elegance Aesthetics</h1>
-                <a href="#services" class="viewServices__Button">View Services</a>
+              <div class="about">
+                <p>
+                  Formada em Estética e Cosmetologia, pós graduada em Estética
+                  clínica avançada, Graduanda em Biomedicina,
+                  <strong>
+                    Especialista em Diástase Abdominal, Estética para gestantes,
+                    Drenagem Linfática, Pré e pós operatório de cirurgias e
+                    Harmonização facial, corporal e íntima </strong
+                  >, é também idealizadora da sua própria linha de
+                  dermocosméticos e cosmocêuticos/nutracêuticos.
+                </p>
               </div>
-              <div class="bannerImage__container">
-                <img
-                src="./src/assets/images/banner.png"
-                class="bannerImage"
+            </div>
+            <div class="bannerImage__container">
+              <img
+                src="./src/assets/images/logo-bg.PNG"
                 alt=""
+                class="logo-bg"
               />
+              <div class="imageBanner__text">
+                <h2>Dra.</h2>
+                <h1>Manu Siqueira</h1>
               </div>
             </div>
           </div>
-        <!-- <img
-          src="./src/assets/images/svg/waves/wave-banner.svg"
-          alt=""
-          class="waveMain__page"
-        />
+        </div>
+        <!--
         <img
           src="./src/assets/images/svg/randomForms/form01.svg"
           alt=""
@@ -105,163 +123,208 @@
         /> -->
       </div>
 
-      <div class="container__pageTwo" id="services">
-        <h3>NATURAL AND HEALTHY</h3>
-        <h4>Treatments & Services</h4>
-        <div class="cardsContainer">
-          <div class="card">
-            <img
-              src="./src/assets/images/treatments/face.jpg"
-              alt=""
-              class="treatmentImage"
-            />
-            <span class="treatmentType">Facial aesthetics</span>
-            <span class="treatmentName">Cosmetic/Surgical</span>
-            <div class="cardDivisor">
-              <div class="line"></div>
-            </div>
-            <div class="trementDetails">
-              <p>
-                The advanced facial renewal treatment offers a professional and
-                focused to improve the appearance of the skin and promote a
-                feeling of rejuvenation...
-              </p>
-            </div>
-            <a href="#" class="seeMoreLink">See more</a>
+      <div class="container__pageTwo">
+        <div class="aboutUs__imageContainer">
+          <img src="./src/assets/images/teamMs.jpg" alt="" class="teamImage" />
+        </div>
+        <div class="aboutUs__text">
+          <span class="aboutTitle">Quem somos</span>
+          <p class="aboutText">
+            Fundada em 2016, composta por Esteticistas, Biomédica, Nutricionista
+            e Educador Físico, nossa clinica conta com uma equipe de
+            profissionais que atuam diretamente em nossos tratamentos e por isso
+            temos os melhores e mais impactantes resultados, aqui você encontra
+            todos os serviços e produtos da Saúde Estética em um só lugar,
+            trazendo para nossos pacientes comodidade, conforto, segurança e
+            inovação em nossas tecnologias.
+          </p>
+          <div class="aboutImages"></div>
+        </div>
+        <img
+          src="./src/assets/images/svg/waves/wave-banner.svg"
+          alt=""
+          class="waveMain__page"
+        />
+        <img
+          src="./src/assets/images/logo-light.png"
+          alt=""
+          class="pageTwo_logoLight"
+        />
+      </div>
+    </div>
+
+    <div class="container__pageThree" id="services">
+      <h3>NATURAL AND HEALTHY</h3>
+      <h4>Nossos Serviços</h4>
+
+      <div class="bigCardContainer">
+        <div class="bigCard">
+          <div class="bigCard__text">
+            <img src="./src/assets/images/svg/waves/wave-card.svg" alt="" class="waveCard">
+            <span class="bigCardTitle">Estética Facial</span>
+            <p class="bigCardAbout">
+              Limpeza de Pele, Peelings, Microagulhamento e todas as tecnologias
+              desenvolvidas para os tratamentos faciais.
+            </p>
+            <a href="#services" class="viewService__Button">Quero saber mais</a>
           </div>
-          <div class="card">
+          <div class="bigCard__imageContainer">
             <img
-              src="./src/assets/images/treatments/body.jpg"
+              src="./src/assets/images/treatments/face.png"
               alt=""
-              class="treatmentImage"
+              class="bigCardImage"
             />
-            <span class="treatmentType">Body esthetics</span>
-            <span class="treatmentName">Cosmetic/Surgical</span>
-            <div class="cardDivisor">
-              <div class="line"></div>
-            </div>
-            <div class="trementDetails">
-              <p>
-                Furthermore, modeling massage can improve metabolism, eliminate
-                toxins, improve peripheral vascular circulation and increase
-                muscle tone...
-              </p>
-            </div>
-            <a href="#" class="seeMoreLink">See more</a>
-          </div>
-          <div class="card">
             <img
-              src="./src/assets/images/treatments/hair.jpg"
+              src="./src/assets/images/logo-light-cicle.png"
               alt=""
-              class="treatmentImage"
+              class="bigCard__logo"
             />
-            <span class="treatmentType">Hair aesthetics</span>
-            <span class="treatmentName">Cosmetic</span>
-            <div class="cardDivisor">
-              <div class="line"></div>
-            </div>
-            <div class="trementDetails">
-              <p>
-                These treatments are classified within aesthetic medicine and
-                are designed to improve the appearance of hair and scalp...
-              </p>
-            </div>
-            <a href="#" class="seeMoreLink">See more</a>
-          </div>
-          <div class="card">
-            <img
-              src="./src/assets/images/treatments/massage.jpg"
-              alt=""
-              class="treatmentImage"
-            />
-            <span class="treatmentType">Relaxing Massage</span>
-            <span class="treatmentName">Cosmetic</span>
-            <div class="cardDivisor">
-              <div class="line"></div>
-            </div>
-            <div class="trementDetails">
-              <p>
-                A therapeutic technique that aims to promote relaxation and
-                stress relief by applying gentle to moderate pressure to the
-                muscles and tissues of the body.
-              </p>
-            </div>
-            <a href="#" class="seeMoreLink">See more</a>
-          </div>
-          <div class="card">
-            <img
-              src="./src/assets/images/treatments/lips.jpg"
-              alt=""
-              class="treatmentImage"
-            />
-            <span class="treatmentType">Lip Renewal</span>
-            <span class="treatmentName">Cosmetic</span>
-            <div class="cardDivisor">
-              <div class="line"></div>
-            </div>
-            <div class="trementDetails">
-              <p>
-                Lip renewal is a process that aims to promote the health and
-                beauty of the lips through specific care, including exfoliation,
-                hydration and protection.
-              </p>
-            </div>
-            <a href="#" class="seeMoreLink">See more</a>
           </div>
         </div>
       </div>
 
-      <div class="container__pageThree" id="contact">
-        <div class="contactBanner">
-          <div class="contactBanner__cover">
-            <img
-              src="./src/assets/images/logo-light.png"
-              alt=""
-              class="logoFull"
-            />
-          </div>
-        </div>
-        <div class="contactInfos">
+      <div class="cardsContainer">
+        <div class="cardTreatment">
           <img
-            src="./src/assets/images/contact-emphasis.jpg"
+            src="./src/assets/images/treatments/hair.jpg"
             alt=""
-            class="contactDestac__image"
+            class="treatmentImage"
           />
-          <div class="infos">
-            <h5>Who we are</h5>
-            <h6 class="companyName">Elegance Aesthetics</h6>
-            <p>
-              Elegance Aesthetics is a company focused on aesthetic and health
-              treatments
-            </p>
-            <span class="infos__title">book your review:</span>
-            <div class="infosLinks">
-              <a
-                href="https://api.whatsapp.com/send/?phone=5575988275212&text&type=phone_number&app_absent=0"
-                class="contact_whatsapp"
-                ><img
-                  src="./src/assets/images/svg/whatsapp-icon-light.svg"
-                  alt=""
-                />Fale conosco</a
-              >
-            </div>
-            <span class="adress__title">Adress</span>
-            <div class="adress">
-              <span>Elm Street</span>
-              <span>N° 1234 </span>
-              <span>Springfield, IL 62701</span>
-              <span>NY - United States</span>
-              <a
-                href="https://www.google.com/maps/search/?api=1&query=[New york]"
-                class="contact_maps"
-                ><img src="./src/assets/images/Google_Maps_Logo.svg.png" alt=""
-              /></a>
-            </div>
+          <span class="treatmentType">Hair aesthetics</span>
+          <span class="treatmentName">Cosmetic</span>
+          <div class="cardDivisor">
+            <div class="line"></div>
           </div>
+          <div class="trementDetails">
+            <p>
+              These treatments are classified within aesthetic medicine and are
+              designed to improve the appearance of hair and scalp...
+            </p>
+          </div>
+          <a href="#" class="seeMoreLink">See more</a>
+        </div>
+        <div class="cardTreatment">
+          <img
+            src="./src/assets/images/treatments/massage.jpg"
+            alt=""
+            class="treatmentImage"
+          />
+          <span class="treatmentType">Relaxing Massage</span>
+          <span class="treatmentName">Cosmetic</span>
+          <div class="cardDivisor">
+            <div class="line"></div>
+          </div>
+          <div class="trementDetails">
+            <p>
+              A therapeutic technique that aims to promote relaxation and stress
+              relief by applying gentle to moderate pressure to the muscles and
+              tissues of the body.
+            </p>
+          </div>
+          <a href="#" class="seeMoreLink">See more</a>
+        </div>
+        <div class="cardTreatment">
+          <img
+            src="./src/assets/images/treatments/lips.jpg"
+            alt=""
+            class="treatmentImage"
+          />
+          <span class="treatmentType">Lip Renewal</span>
+          <span class="treatmentName">Cosmetic</span>
+          <div class="cardDivisor">
+            <div class="line"></div>
+          </div>
+          <div class="trementDetails">
+            <p>
+              Lip renewal is a process that aims to promote the health and
+              beauty of the lips through specific care, including exfoliation,
+              hydration and protection.
+            </p>
+          </div>
+          <a href="#" class="seeMoreLink">See more</a>
         </div>
       </div>
-      <div class="openFormContainer">
-        <img src="./src/assets/images/svg/message-icon.svg" alt="" />
+    </div>
+
+    <div class="container__pageTwo_one">
+      <div class="aboutUs__text_one">
+        <span class="aboutTitle_one">Nosso espaço</span>
+        <p class="aboutText_one">
+          Orgulhosamente oferecemos um ambiente acolhedor, onde o bom
+          atendimento é uma prioridade absoluta.
+        </p>
+      </div>
+      <div class="aboutUs__imageContainer_one">
+        <div class="images">
+          <img
+            src="./src/assets/images/espacoAtendente.jpg"
+            alt=""
+            class="image"
+          />
+          <img src="./src/assets/images/espacoMesa.jpg" alt="" class="image" />
+          <img
+            src="./src/assets/images/espacoCorredor.jpg"
+            alt=""
+            class="image"
+          />
+        </div>
+        <!-- <video width="400" height="400" autoplay loop>
+                  <source
+                    src="./src/assets/videos/videoEspaco.mp4"
+                    type="video/mp4"
+                  />
+                  Seu navegador não suporta o elemento de vídeo.
+                </video> -->
+      </div>
+    </div>
+
+    <div class="container__pageFour" id="contact">
+      <div class="contactBanner">
+        <div class="contactBanner__cover">
+          <img
+            src="./src/assets/images/logo-light.png"
+            alt=""
+            class="logoFull"
+          />
+        </div>
+      </div>
+      <div class="contactInfos">
+        <img
+          src="./src/assets/images/espacoMesa.jpg"
+          alt=""
+          class="contactDestac__image"
+        />
+        <div class="infos">
+          <h5>Who we are</h5>
+          <h6 class="companyName">Elegance Aesthetics</h6>
+          <p>
+            Elegance Aesthetics is a company focused on aesthetic and health
+            treatments
+          </p>
+          <span class="infos__title">book your review:</span>
+          <div class="infosLinks">
+            <a
+              href="https://api.whatsapp.com/send/?phone=5575988275212&text&type=phone_number&app_absent=0"
+              class="contact_whatsapp"
+              ><img
+                src="./src/assets/images/svg/whatsapp-icon-light.svg"
+                alt=""
+              />Fale conosco</a
+            >
+          </div>
+          <span class="adress__title">Adress</span>
+          <div class="adress">
+            <span>Elm Street</span>
+            <span>N° 1234 </span>
+            <span>Springfield, IL 62701</span>
+            <span>NY - United States</span>
+            <a
+              href="https://www.google.com/maps/search/?api=1&query=[New york]"
+              class="contact_maps"
+              ><img src="./src/assets/images/Google_Maps_Logo.svg.png" alt=""
+            /></a>
+          </div>
+        </div>
       </div>
     </div>
   </body>

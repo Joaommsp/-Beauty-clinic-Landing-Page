@@ -1,6 +1,6 @@
 /* ====================== PAGE 2 - SERVICES ================== */
 
-.container__pageTwo {
+.container__pageThree {
   width: 100%;
   background-color: var(--cor-branca);
   background-image: url(../assets/images/treatments-bg-image.png),
@@ -40,9 +40,102 @@
   z-index: -1; /* Certifique-se de que o pseudo-elemento esteja atrás do conteúdo do elemento */
 }
 
+.bigCardContainer {
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2rem;
+  background-color: #9f577a;
+}
+
+.bigCard {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bigCard__text {
+  width: 60%;
+  height: 100%;
+  padding: 5rem 2rem;
+
+  position: relative;
+}
+
+.waveCard {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.bigCardTitle {
+  font-weight: 500;
+  font-size: 3rem;
+  color: #f1f1f1;
+  z-index: 10;
+  position: relative;
+}
+
+.bigCardAbout {
+  color: #f1f1f1;
+  margin-top: 2rem;
+}
+
+.bigCard__imageContainer {
+  width: 40%;
+  height: 100%;
+  position: relative;
+  background-color: #f1f1f1;
+  z-index: 10;
+}
+
+.bigCardImage {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 650px;
+  filter: drop-shadow(9px -7px 6px #0c0c0c73);
+}
+
+.bigCard__logo {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  width: 150px;
+}
+
+.viewService__Button {
+  display: block;
+  width: 200px;
+  padding: 0.8rem 1rem;
+
+  margin-top: 2rem;
+
+  font-size: 0.8rem;
+  font-weight: 600;
+
+  background-color: #e9e9e9;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Figtree", sans-serif;
+  letter-spacing: 1px;
+  border: 2px solid #571f50;
+  color: #571f50;
+
+  transition: 0.3s ease-in-out;
+
+  z-index: 5;
+}
+
 @media screen and (min-height: 780px) and (min-width: 1030px) {
   .container__pageTwo {
-    height: 100vh;
+    height: 100%;
   }
 }
 
@@ -113,12 +206,11 @@ h4 {
   background: #571f50;
 }
 
-.card {
-  width: 290px;
-
+.cardTreatment {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: #ffffff;
 }
 
 .treatmentType {
