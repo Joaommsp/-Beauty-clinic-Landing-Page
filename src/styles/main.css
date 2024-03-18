@@ -52,7 +52,11 @@
   position: absolute;
   top: 50%;
   left: 50%;
+<<<<<<< HEAD
   transform: translate(-50%, -50%);
+=======
+  transform: translate(-50%, -50%)
+>>>>>>> e75f49aa067bcbc9c15563c46c5441c8387a15c5
 }
 
 .navigation {
@@ -114,17 +118,24 @@
 }
 
 .bannerImage__container {
+<<<<<<< HEAD
   width: 100%;
   height: 60%;
   padding: 0 5rem;
   display: flex;
   justify-content: center;
+=======
+  width: 50%;
+  height: 100%;
+  background-image: url(../assets/images/banner-Ms.png.jpg);
+>>>>>>> e75f49aa067bcbc9c15563c46c5441c8387a15c5
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
 }
 
+<<<<<<< HEAD
 .bannerImage__image {
   width: 400px;
   height: 400px;
@@ -146,6 +157,22 @@
   display: flex;
   flex-direction: column;
   margin-bottom: 2rem;
+=======
+.logo-bg {
+  position: absolute;
+  bottom: 2rem;
+  right: 2rem;
+  width: 100px;
+}
+
+.imageBanner__text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  position: absolute;
+  top: 2rem;
+  right:2rem;
+>>>>>>> e75f49aa067bcbc9c15563c46c5441c8387a15c5
 }
 
 .bannerGradient {
@@ -160,8 +187,13 @@
 }
 
 .bannerText {
+<<<<<<< HEAD
   width: 100%;
   height: 40%;
+=======
+  width: 50%;
+  height: 100%;
+>>>>>>> e75f49aa067bcbc9c15563c46c5441c8387a15c5
   padding: 2rem 2rem;
   z-index: 5;
   background-color: #e4d5bd;
@@ -174,12 +206,17 @@
 }
 
 .logo-full {
+<<<<<<< HEAD
   width: 306px;
+=======
+  width: 456px;
+>>>>>>> e75f49aa067bcbc9c15563c46c5441c8387a15c5
 }
 
 .bannerText__links {
   display: flex;
   gap: 24px;
+<<<<<<< HEAD
   margin-top: 1rem;
 }
 
@@ -192,6 +229,9 @@
 .instagramLink img {
   margin-right: 0.5rem;
   width: 20px;
+=======
+  margin-top: 2rem;
+>>>>>>> e75f49aa067bcbc9c15563c46c5441c8387a15c5
 }
 
 h2,
@@ -204,7 +244,7 @@ h1 {
   font-size: 2rem;
   margin-bottom: 0rem;
 
-  color: #571f50;
+  color:#571f50;
   font-weight: 400;
   z-index: 500;
   /* text-shadow: -3px -3px 2px rgba(159,159,159,0.6); */
@@ -216,6 +256,24 @@ h2 {
   font-size: 1rem;
   letter-spacing: 2px;
   text-transform: uppercase;
+  color:#571f50;
+}
+
+.about {
+  position: absolute;
+  width: 90%;
+  bottom: 2rem;
+  margin-top: 2rem;
+  background-color: #fefefe;
+  padding: 1rem;
+}
+
+.about p {
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+.about p strong {
   color: #571f50;
 }
 
@@ -241,7 +299,11 @@ h2 {
   width: 200px;
   padding: 0.8rem 1rem;
 
+<<<<<<< HEAD
   font-size: 0.8rem;
+=======
+  font-size: .8rem;
+>>>>>>> e75f49aa067bcbc9c15563c46c5441c8387a15c5
 
   background-color: #571f50;
   text-align: center;
@@ -304,6 +366,7 @@ h2 {
 }
 
 @media screen and (max-width: 600px) {
+<<<<<<< HEAD
   .header {
     height: 8vh;
   }
@@ -428,4 +491,12 @@ h2 {
 
 @media screen and (min-width: 1001px) and (max-width: 1300px) {
   
+=======
+}
+
+@media screen and (min-width: 601px) and (max-width: 1000px) {
+}
+
+@media screen and (min-width: 1001px) and (max-width: 1300px) {
+>>>>>>> e75f49aa067bcbc9c15563c46c5441c8387a15c5
 }

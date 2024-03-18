@@ -13,8 +13,18 @@
   padding: 2rem;
 }
 
+<<<<<<< HEAD
 .logo-full-footer {
   width: 356px;
+=======
+.logoFull {
+  width: 200px;
+}
+
+.contactDestac__image {
+  width: 550px;
+  margin-right: 1rem;
+>>>>>>> e75f49aa067bcbc9c15563c46c5441c8387a15c5
 }
 
 .contactInfos {
